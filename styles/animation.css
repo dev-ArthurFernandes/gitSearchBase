@@ -1,0 +1,14 @@
+@keyframes in-rotating {
+    0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.animation{
+    width: 100%;
+    height: 60%;
+    animation: in-rotating 2s linear infinite;
+}

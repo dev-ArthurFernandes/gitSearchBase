@@ -5,11 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/styles/animation.css" />
+    <link rel="stylesheet" href="styles/homeMain.css" />
+    <link rel="stylesheet" href="styles/leftSection.css" />
+    <link rel="stylesheet" href="styles/rigthSection.css" />
+    <script defer src="scripts/recentList.js"></script>
+    <script defer src="scripts/check.js"></script>
+    <script defer src="scripts/animation.js"></script>
+    <script defer src="scripts/index.js"></script>
     <title>Git Search</title>
   </head>
   <body>
-    <main></main>
-    <script src="index.js"></script>
+    <main>
+      <section class="leftSection">
+        <div class="leftContent">
+          <h1 id="siteTitle">Git Search</h1>
+          <h3 id="siteDescription">Encontre e se conect com profissionais de forma rápida e fácil.</h3>
+          <span>
+            <p>Achados Recentemente:</p>
+            <ol class="recentList"></ol>
+          </span>
+        </div>
+      </section>
+      <section class="rigthSection">
+         <div class="rigthContent">
+            <h2>Procurar por um usuário</h2>
+            <div>
+              <p>Usuário gitHub</p>
+              <input type="text" placeholder="Digite um usuário do gitHub aqui..." id="searchUser" oninput="checkInput()">
+              <div id="notFound"></div>
+              <button id="searchUserButton"></button>
+            </div>
+         </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,0 +1,75 @@
+.leftSection{
+    width: 50%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-brand-1);
+    color: #FFFFFF;
+}
+
+.leftContent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.leftContent h1{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.leftContent h3{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.leftContent p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.leftContent > span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recentList {
+    display: flex;
+    gap: 10px;
+}
+
+.recentList > li{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1px solid #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.recentList > li > label{
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    padding: 3px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color: black;
+    transform: translate(-30px,35px);
+}
+
+.recentList > li:hover > label{
+    display: block;
+}
+
+.recentList > li > label > a{
+    text-decoration: none;
+}

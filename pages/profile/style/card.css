@@ -1,0 +1,71 @@
+.card{
+    width: 381px;
+    height: 243px;
+    background: #191C1F;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    padding: 27px;
+    flex-direction: column;
+}
+
+.card:hover{
+    border: 1px solid #FFFFFF;
+}
+
+#projectTitle{
+    height: fit-content;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#projectBio{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 60%;
+}
+
+.buttonSpan{
+    width: 100%;
+    display: flex;
+    gap: 14px;
+}
+
+#repositoryButton{
+    width: 93px;
+    height: 28px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#repositoryButton:hover{
+    background-color: var(--color-brand-1);
+    border: 1px solid var(--color-brand-1);
+}
+
+#demoButton{
+    width: 56px;
+    height: 28px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#demoButton:hover{
+    background-color: var(--color-brand-1);
+    border: 1px solid var(--color-brand-1);
+}

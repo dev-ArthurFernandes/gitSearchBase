@@ -5,11 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/styles/body.css" />
+    <link rel="stylesheet" href="/styles/container.css" />
+    <link rel="stylesheet" href="/styles/backgrounds.css" />
+    <link rel="stylesheet" href="style/headerProfile.css" />
+    <link rel="stylesheet" href="style/mainSectino.css" />
+    <link rel="stylesheet" href="style/repositoryList.css" />
+    <link rel="stylesheet" href="style/card.css" />
+    <link rel="stylesheet" href="style/modal.css" />
+    <script defer src="script/request.js"></script>
+    <script defer src="script/renderUserHeader.js"></script>
+    <script defer src="script/renderUserRepository.js"></script>
+    <script defer src="script/modal.js"></script>
+    <script defer src="script/index.js"></script>
     <title>Nome do usuário Github</title>
   </head>
-  <body>
-    <main></main>
-    <script src="index.js"></script>
+  <body class="bg-color-grey2">
+    <header class="header">
+      <div class="headerContainer">
+        <span class="userSpan">
+          <div class="image"><img src="" alt="" id="avatar"></div>
+          <div class="userTitle">
+            <h2 id="userName"></h2>
+            <p id="userStack"></p>
+          </div>
+        </span>
+        <div class="buttons">
+          <button class="emailButton" id="emailButton">Email</button>
+          <button class="changeUser" id="changeUser">Trocar de usuário</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div>
+        <ol class="repositoryList" id="repositoryList">
+        </ol>
+      </div>
+    </main>
   </body>
 </html>

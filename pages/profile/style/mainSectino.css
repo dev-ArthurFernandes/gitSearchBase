@@ -1,0 +1,17 @@
+main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+main > div{
+    width: 45%;
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+main > div::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,72 @@
+.rigthSection{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey-2);
+    color: #FFFFFF;
+}
+
+.rigthContent{
+    min-width: 316px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rigthContent > h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.rigthContent > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.rigthContent > #notFoundDiv{
+    margin: 0.375rem 0 0.375rem 0;    
+}
+
+.rigthContent > div > p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 0.375rem;
+}
+
+.rigthContent input{
+    width: 100%;
+    height: 38px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+.rigthContent #searchUser{
+    background-color: var(--color-grey-1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #FFFFFF;
+    margin: 0.375rem 0 0.625rem 0;
+}
+
+.rigthContent #notFoundUser{
+    background: transparent;
+    color: var(--color-alert);
+    cursor: auto;
+}
+
+#searchUserButton{
+    width: 100%;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 0.625rem 0 0 0;
+    background-color: var(--color-brand-1);
+    border-radius: 4px;
+    border: none;
+}

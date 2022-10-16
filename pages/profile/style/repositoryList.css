@@ -1,0 +1,7 @@
+.repositoryList{
+    width: 100%;
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

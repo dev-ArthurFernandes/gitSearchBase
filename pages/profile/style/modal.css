@@ -1,0 +1,54 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+}
+
+.modal > div{
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    background-color: var(--color-alert);
+}
+
+.modal > div > h2{
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.modal > div > p{
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.modal > div > span{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.modal > div > span > button{
+    width: fit-content;
+    padding: 5px;
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal > div > span > button:hover{
+    background-color: rgba(255,255,255,0.9);
+    border: 1px solid rgba(0,0,0,0.3);
+}

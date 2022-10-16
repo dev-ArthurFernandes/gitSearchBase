@@ -1,0 +1,85 @@
+.header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.userSpan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid var(--color-brand-1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image #avatar{
+    width: 100%;
+    height: 100%;
+}
+
+.userTitle{
+    width: fit-content;
+    max-width: 400px;
+    height: fit-content;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 8px;
+}
+
+.userTitle p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    opacity: 50%;
+}
+
+.buttons{
+    width: 550px;
+    display: flex;
+    gap: 14px;
+    justify-content: end;
+}
+
+.emailButton{
+    width: 84px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: var(--color-brand-2);
+    cursor: pointer;
+}
+
+.emailButton:hover{
+    background-color: var(--color-brand-1);
+}
+
+.changeUser{
+    width: 169px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+}
+
+.changeUser:hover{
+    background-color: rgba(255, 255, 255,0.04);
+}
