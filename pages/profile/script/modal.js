@@ -12,8 +12,8 @@ function modal(){
 
     section.classList = 'modal'
     
-    h2.innerText = 'Desculpa!'
-    p.innerText = 'Parece que esse repositório não demonstração...'
+    h2.innerText = 'Pedimos desculpas!'
+    p.innerText = 'Mas parece que esse repositório não tem demonstração...'
 
     button.innerText = 'Entendi'
 

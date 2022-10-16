@@ -27,11 +27,19 @@ function checkUserExist(user){
             html_url: resp.html_url,
         }
 
-        if(recentList.length === 3){
-            console.log(recentList.findIndex(Element => Element.name === resp.name))
-        }else{
+        if(recentList.findIndex(Element => Element.name === resp.name) >= 0){
+            recentList.splice(recentList.findIndex(Element => Element.name === resp.name),1)
             recentList = [...recentList, userObject]
+        }else{
+            if(recentList.length === 3){
+             recentList.splice(0,1)
+             recentList = [...recentList, userObject]   
+            }else{
+                recentList = [...recentList, userObject]
+            }
         }
+
+
         localStorage.setItem('recentList', JSON.stringify(recentList))
         
         window.location.assign('/pages/profile/index.html')
