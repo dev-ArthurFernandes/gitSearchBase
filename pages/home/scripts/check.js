@@ -21,14 +21,16 @@ function checkUserExist(user){
         let recentList = JSON.parse(localStorage.getItem('recentList')) || []
         
         let userObject = {
+            id: resp.id,
             name: resp.name,
             avatar_url: resp.avatar_url,
             bio: resp.bio,
             html_url: resp.html_url,
+            login: resp.login,
         }
 
         if(recentList.findIndex(Element => Element.name === resp.name) >= 0){
-            recentList.splice(recentList.findIndex(Element => Element.name === resp.name),1)
+            recentList.splice(recentList.findIndex(Element => Element.id === resp.id),1)
             recentList = [...recentList, userObject]
         }else{
             if(recentList.length === 3){

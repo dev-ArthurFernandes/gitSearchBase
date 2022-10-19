@@ -14,7 +14,11 @@ function recentList(){
             label.for = 'link'
             a.id = 'link'
             a.innerText = 'Acessa este perfil'
-            a.href = `${element.html_url}`
+            a.href = '/pages/profile/index.html'
+
+            a.addEventListener('click', () => {
+                localStorage.setItem('user', JSON.stringify(element.login))
+            })
     
             label.appendChild(a)
             li.appendChild(label)
